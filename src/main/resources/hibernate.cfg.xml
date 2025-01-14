@@ -2,19 +2,25 @@
     <session-factory>
         <!-- Configuración de conexión a la base de datos -->
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/empresa</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/practica_ad_ut3</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password"/>
         <!-- Dialecto de Hibernate -->
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <!-- Configuración adicional -->
-        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
         <!-- Clases anotadas -->
 
         <mapping class="com.ggm.ad.ut2.model.Event"/>
         <mapping class="com.ggm.ad.ut2.model.Presenter"/>
-
+        <mapping class="com.ggm.ad.ut2.model.Client"/>
+        <mapping class="com.ggm.ad.ut2.model.Entreteiner"/>
+        <mapping class="com.ggm.ad.ut2.model.Costume"/>
+        <mapping class="com.ggm.ad.ut2.model.Particular"/>
+        <mapping class="com.ggm.ad.ut2.model.Company"/>
+        <mapping class="com.ggm.ad.ut2.model.Contract"/>
+        <!--<mapping class="com.ggm.ad.ut2.model.Participate"/>-->
     </session-factory>
 </hibernate-configuration>

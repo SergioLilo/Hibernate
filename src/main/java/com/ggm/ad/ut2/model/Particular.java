@@ -14,7 +14,7 @@ public class Particular extends Client {
     @Column(name = "apellido", nullable = false)
     private String lastName;
 
-    @Id
+
     @Column(name = "dni", unique = true, nullable = false)
     private String dni;
 
@@ -23,5 +23,17 @@ public class Particular extends Client {
     public String toString() {
         return "Particular{" + super.toString() +
                 ", firstName='" + firstName + "', lastName='" + lastName + "', dni='" + dni + "'}";
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 }

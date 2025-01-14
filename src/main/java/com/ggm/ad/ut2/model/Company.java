@@ -8,7 +8,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "clientes_empresas")
 public class Company extends Client {
-    @Id
+
     @Column(name = "cif", unique = true, nullable = false)
     private String cif;
 

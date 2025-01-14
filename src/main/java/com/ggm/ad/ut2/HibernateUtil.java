@@ -1,8 +1,7 @@
 package com.ggm.ad.ut2;
 
 
-import com.ggm.ad.ut2.model.Client;
-import com.ggm.ad.ut2.model.Event;
+import com.ggm.ad.ut2.model.*;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
@@ -45,6 +44,14 @@ public class HibernateUtil {
         //Especificamos qué clases/entidades va a mapear
 
         configuration.addAnnotatedClass(Event.class);
+        configuration.addAnnotatedClass(Client.class);
+        configuration.addAnnotatedClass(Company.class);
+      //  configuration.addAnnotatedClass(Contract.class);
+        configuration.addAnnotatedClass(Costume.class);
+        configuration.addAnnotatedClass(Entreteiner.class);
+       // configuration.addAnnotatedClass(Event.class);
+        configuration.addAnnotatedClass(Particular.class);
+        configuration.addAnnotatedClass(Presenter.class);
         /*
         configuration.addAnnotatedClass(Manager.class);
         configuration.addAnnotatedClass(Developer.class);
